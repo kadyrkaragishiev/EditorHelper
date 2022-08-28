@@ -9,10 +9,10 @@ namespace Editor
         private int triangleCount;
         private int subMeshCount;
 
-        [MenuItem("Window/Mesh Info")]
+        [MenuItem("Window/Tools/Mesh Info")]
         public static void ShowWindow()
         {
-            MeshInfo window = (MeshInfo) EditorWindow.GetWindow(typeof(MeshInfo));
+            MeshInfo window = (MeshInfo) GetWindow(typeof(MeshInfo));
             window.titleContent.text = "Mesh Info";
         }
 
